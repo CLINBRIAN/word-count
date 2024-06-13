@@ -40,6 +40,11 @@ public class WordCount {
         //print out the results
         for(int i=0; i<words.size(); i++)
         System.out.println(words.get(i)+" occured "+ count.get(i)+ " time(s)");
+        int sum=0;
+        for(int counting: count){
+            sum = sum+counting;
+        }
+        System.out.println("total words are "+ sum);
 
     }
 }
